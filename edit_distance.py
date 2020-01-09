@@ -4,6 +4,9 @@ file = open(filepath, "r")
 
 #temp = file.readline().splitlines()
 
+#上面、左邊和左上都加一，只有兩個字母一樣時才取左上值
+#（三個中取最小的）
+
 def LevenshteinDistance(s1, s2):
     if len(s1) > len(s2):
         s1, s2 = s2, s1
